@@ -1,0 +1,30 @@
+{
+    "nombre": "Jaimito",
+    "apellido": "Pérez",
+    "edad": 38,
+    "numeroCuenta": "98583xxx000",
+    "fechaCreacion": "2020-10-08",
+    "movimientos": [
+        {
+            "tipo": "Crédito",
+            "monto": 1500.00,
+            "descripcion": "Salario"
+        },
+        {
+            "tipo": "Debito",
+            "monto": 10.00,
+            "descripcion": "Compra Online"
+        },
+        {
+            "tipo": "Debito",
+            "monto": 12.00,
+            "descripcion": "Transferencia a otro banco"
+        },
+        {
+            "tipo": "Crédito",
+            "monto": 80.00,
+            "descripcion": "Ahorro"
+        }
+    ],
+    "saldo": 1558.00
+}

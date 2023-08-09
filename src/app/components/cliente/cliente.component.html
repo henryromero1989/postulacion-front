@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="row">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                    <p class="mb-0"># Cuenta</p>
+                    </div>
+                    <div class="col-sm-9">
+                    <p class="mb-0">{{cliente.numeroCuenta}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                    <p class="mb-0">Nombre</p>
+                    </div>
+                    <div class="col-sm-9">
+                    <p class="mb-0">{{cliente.nombre}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                    <p class="mb-0">Apellido</p>
+                    </div>
+                    <div class="col-sm-9">
+                    <p class="mb-0">{{cliente.apellido}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                    <p class="mb-0">Edad</p>
+                    </div>
+                    <div class="col-sm-9">
+                    <p class="mb-0">{{cliente.edad}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                    <p class="mb-0">Fecha de Creaci[on de la cuenta</p>
+                    </div>
+                    <div class="col-sm-9">
+                    <p class="mb-0">{{cliente.fechaCreacion}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                    <p class="mb-0">Saldo</p>
+                    </div>
+                    <div class="col-sm-9">
+                    <p class="mb-0">${{cliente.saldo}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <table class="table">
+                <thead>
+                    <th>
+                        Descripcion
+                    </th>
+                    <th>
+                        Tipo
+                    </th>
+                    <th>
+                        Monto
+                    </th>
+                </thead>
+                <tbody >
+                    <tr *ngFor="let movimiento of cliente.movimientos">
+                        <td>
+                            {{movimiento.descripcion}}
+                        </td>
+                        <td>
+                            {{movimiento.tipo}}
+                        </td>
+                        <td>
+                            ${{movimiento.monto}}
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
